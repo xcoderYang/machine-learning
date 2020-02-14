@@ -1,6 +1,6 @@
 import os
 import tarfile
-from six.moves import urllib
+import urllib
 DOWNLOAD_ROOT = "http://raw.githubusercontent.com/ageron/handson-ml/master/"
 HOUSING_PATH = "datasets/housing"
 HOUSING_URL = DOWNLOAD_ROOT + HOUSING_PATH + '/housing.tgz'
