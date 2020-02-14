@@ -3,7 +3,8 @@ import tarfile
 from six.moves import urllib
 DOWNLOAD_ROOT = "http://raw.githubusercontent.com/ageron/handson-ml/master/"
 HOUSING_PATH = "datasets/housing"
-HOUSING_URL = "DOWNLOAD_ROOT + HOUSING_PATH + '/housing.tgz';
+HOUSING_URL = DOWNLOAD_ROOT + HOUSING_PATH + '/housing.tgz'
+
 def fetch_housing_data(housing_url=HOUSING_URL, housing_path = HOUSING_PATH):
 	if not os.path.isdir(housing_path):
 		os.makedirs(housing_path)
